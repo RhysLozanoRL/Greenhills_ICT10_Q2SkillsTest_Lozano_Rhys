@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.2/core.css" />
+    <!-- PyScript JavaScript -->
+    <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+    <title>Skills Test Q2</title>
+     <style>
+        .search {
+            background-color: rgb(245, 168, 175); 
+            color: white; 
+            font-size: 16px;  
+        }
+        
+</style>
+</head>
+<body>
+    <div class="white-box">
+
+      <h1>Non-Metal Elements</h1>
+      <p> Element Info Finder : Enter the Symbol of the element you wish to find the : Symbol, Name, Atomic Number, & Atomic Mass of </p> 
+    </div>
+    <form>
+        <label>Element Symbol</label><br>
+        <input type="text" id="elementsymbol" placeholder="Enter symbol"><br><br>
+        <input type="button" class="search" py-click="check_details" value="Check Details">
+    </form><br>
+  <div id="result"></div>
+</div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
